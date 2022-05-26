@@ -27,17 +27,19 @@ class Plug extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 730,
-        decoration: BoxDecoration(
-          color: Colors.deepOrange,
-          border: Border.all(),
-        ),
-        child: Row(children: <Widget>[
+      height: 730,
+      decoration: BoxDecoration(
+        color: Colors.deepOrange,
+        border: Border.all(),
+      ),
+      child: Row(
+        children: <Widget>[
           Text(
             "Заглушка",
-            textAlign: TextAlign.center,
           )
-        ]),
+        ],
+        mainAxisAlignment: MainAxisAlignment.center,
+      ),
     );
   }
 }
